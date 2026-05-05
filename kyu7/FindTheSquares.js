@@ -1,17 +1,17 @@
 //My Solution
 //https://www.codewars.com/kata/60908bc1d5811f0025474291/train/javascript
-const findSquares = num => {
-  let bigger=1;
-  let smaller=0;
-  
+const findSquares = (num) => {
+  let bigger = 1;
+  let smaller = 0;
+
   // Zaman Karmaşıklığı ($O(n)$): Sayı büyüdükçe (örneğin num = 1,000,001 olduğunda) while döngün yarım milyon kez dönecektir. Codewars gibi platformlarda büyük test caseleri geldiğinde "Time Out" (Zaman Aşımı) hatası alma riskin çok yüksek.
-  while(bigger*bigger-smaller*smaller !== num){
-    bigger++
-    smaller++
+  while (bigger * bigger - smaller * smaller !== num) {
+    bigger++;
+    smaller++;
   }
-  bigger *= bigger
-  smaller *= smaller
-  return `${bigger}-${smaller}`
+  bigger *= bigger;
+  smaller *= smaller;
+  return `${bigger}-${smaller}`;
 };
 
 /************** Another solution **************/
@@ -19,6 +19,6 @@ const findSquares = num => {
 // const findSquares = num => {
 //   const smaller = Math.floor(num / 2); // (num - 1) / 2 ile aynı sonucu verir
 //   const bigger = smaller + 1;
-  
+
 //   return `${bigger * bigger}-${smaller * smaller}`;
-// };
+// }

@@ -2,7 +2,6 @@
 //My Solution
 
 var encryptThis = function (text) {
-  if (!text) return "";
   return text
     .split(" ")
     .map((word) => {
