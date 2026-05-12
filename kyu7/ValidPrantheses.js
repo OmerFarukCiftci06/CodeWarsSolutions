@@ -1,4 +1,4 @@
-//https://www.codewars.com/kata/6411b91a5e71b915d237332d/train/javascript,
+//https://www.codewars.com/kata/6411b91a5e71b915d237332d/train/javascript
 //My Solution "Recursive Reduction" (Özyinelemeli Azaltma)" "artık değişmeyene kadar küçültmek"
 //O(n^2)
 function validParentheses(parenStr) {
